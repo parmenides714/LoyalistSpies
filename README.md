@@ -30,17 +30,13 @@ Then each player reveals their Ace and any jokers they may have left in their ha
 Once the round has been scored start a new round and continue until a player beats the target score.
 
 ###Scoring###
-Determine the most common suit among missions. That player is Compromised. If there is a tie for most common suit, then find the most common suit among failed missions. If there is still a tie, then all tied players are compromised.
-Traitors cannot be Compromised.
-If a player does not have the Traitor card at the end of the game, and is not compromised, they are Loyal.
+-If a player ends the game with a Joker in their hand they are a Traitor.  
+-Determine the most common suit among all missions. That player is Compromised. If there is a tie for most common suit, then find the most common suit among failed missions. If there is still a tie, then all tied players are compromised. Traitors cannot be Compromised. There does not need to be a Compromised player every round.  
+-All other players are Loyal.
 
-
-Combine the total VP value of successful missions, loyal players receive this many points.
-For each mission belonging to a players suit, they get a point.
-For each mission belonging to the compromised players suit, they get a point.
-For each failed mission, each traitor gets a point.
-If the majority of missions were failed, the traitors gets 10 points.
-If the majority of failed missions were of the compromised players suit, they get 15 points.
+-Loyal players recieve points equal to the VP value of all successful missions. They also receive 1 extra point for every mission of their suit.  
+-Traitor players receive 1 point for every failed mission, 1 extra point for every mission of their suit, and 10 bonus points if there are strictly more failed missions then successful missions.  
+-Compromised players get points equal to the VP value of all missions of their suit.  
 
 ###Mission Guide###
 
