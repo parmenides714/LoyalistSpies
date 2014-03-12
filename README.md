@@ -21,7 +21,7 @@ Play three cards face down from the Success Deck onto the mission, then each pla
 
 The total value of cards played for the mission is then compared to the covert value of the mission, if it exceeds the covert value the mission is exposed (failed) and set aside along with all the cards played on it. If it is less than the covert value then the mission is successful and its success condition is resolved and then set aside along with all the cards played on it..
 
-If a player ever has fewer than 2 cards left in their hand, after mission resolution. Then they should draw cards from the Success deck until they have 2 cards in their hand.
+**If a player ever has fewer than 2 cards left in their hand, after mission resolution. Then they should draw cards from the Success deck until they have 2 cards in their hand.** -*this may end up not being necessary*
 
 Repeat this process until the success deck runs out of cards.
 
