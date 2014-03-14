@@ -2,11 +2,11 @@ package spies.framework;
 
 public class Card
 {
-	enum Suit {
+	public enum Suit {
 		CLUBS, DIAMONDS, SPADES, HEARTS
 	};
 
-	enum Value {
+	public enum Value {
 		JOKER, ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING
 	};
 
