@@ -201,4 +201,9 @@ public class Player
 	{
 		outputDevice.showMessage(msg);
 	}
+
+	public int getHandSize()
+	{
+		return hand.size();
+	}
 }

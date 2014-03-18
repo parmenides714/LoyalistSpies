@@ -7,6 +7,8 @@ import java.awt.GridBagLayout;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
+import spies.framework.PlayArea;
+import spies.framework.Player;
 import spies.ui.swing.panes.PlayAreaPane;
 import spies.ui.swing.panes.PlayerHandPane;
 import spies.ui.swing.panes.PlayerInfoPane;
@@ -21,14 +23,18 @@ public class GameView extends JFrame
 	private PlayerHandPane playerHand;
 	private PlayerInfoPane playerInfo;
 
+	private Player[] players;
+
 	public GameView()
 	{
 		super("Loyalist Spies");
 
+		initGameInfo();
+
 		status = new StatusPane();
 		playArea = new PlayAreaPane();
 		playerHand = new PlayerHandPane();
-		playerInfo = new PlayerInfoPane();
+		playerInfo = new PlayerInfoPane(players);
 
 		Container pane = getContentPane();
 		pane.setLayout(new GridBagLayout());
@@ -68,6 +74,19 @@ public class GameView extends JFrame
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		pack();
 		setVisible(true);
+	}
+
+	private void initGameInfo()
+	{
+		// TODO Auto-generated method stub
+		// A Place Holder that I'm using to create game objects that need to be referenced.
+
+		players = new Player[PlayArea.PLAYER_COUNT];
+		players[0] = new Player("Jonathan");
+		players[1] = new Player("Arthur");
+		players[2] = new Player("Max");
+		players[3] = new Player("Richard");
+
 	}
 
 	private GridBagConstraints getDefaultGridBagConstraints()
