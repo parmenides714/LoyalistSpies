@@ -206,4 +206,9 @@ public class Player
 	{
 		return hand.size();
 	}
+
+	public List<Card> getHand()
+	{
+		return hand;
+	}
 }

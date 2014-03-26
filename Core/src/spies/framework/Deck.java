@@ -13,6 +13,8 @@ public class Deck
 	private Random random;
 	private List<Card> cards;
 
+	private static final int SHUFFLE_COUNT = 10;
+
 	private Deck(int size)
 	{
 		random = new Random(System.nanoTime());
@@ -21,10 +23,10 @@ public class Deck
 
 	public void shuffle()
 	{
-		Collections.shuffle(cards);
-		Collections.shuffle(cards);
-		Collections.shuffle(cards);
-
+		for (int i = 0; i < SHUFFLE_COUNT; i++)
+		{
+			Collections.shuffle(cards);
+		}
 	}
 
 	public static Deck getAces()

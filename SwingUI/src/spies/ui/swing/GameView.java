@@ -7,6 +7,7 @@ import java.awt.GridBagLayout;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
+import spies.framework.Deck;
 import spies.framework.PlayArea;
 import spies.framework.Player;
 import spies.ui.swing.panes.PlayAreaPane;
@@ -33,7 +34,7 @@ public class GameView extends JFrame
 
 		status = new StatusPane();
 		playArea = new PlayAreaPane();
-		playerHand = new PlayerHandPane();
+		playerHand = new PlayerHandPane(players[0]);
 		playerInfo = new PlayerInfoPane(players);
 
 		Container pane = getContentPane();
@@ -86,6 +87,17 @@ public class GameView extends JFrame
 		players[1] = new Player("Arthur");
 		players[2] = new Player("Max");
 		players[3] = new Player("Richard");
+
+		Deck deck = Deck.getAces();
+		deck.deal(players);
+
+		for (Player player : players)
+		{
+			player.setSuit();
+		}
+
+		deck = Deck.getDeckNoAces();
+		deck.deal(players, 5);
 
 	}
 
