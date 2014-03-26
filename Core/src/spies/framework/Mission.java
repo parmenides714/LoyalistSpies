@@ -206,4 +206,9 @@ public class Mission
 	{
 		baseVP += VP;
 	}
+
+	public Card getMissionCard()
+	{
+		return missionCard;
+	}
 }
